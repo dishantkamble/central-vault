@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: central-config-server
+
+    vault:
+      uri: https://localhost:8200
+      token: 00000000-0000-0000-0000-000000000000
+      application-name: book-application, streaming-service
+#      ssl:
+#        trust-store: classpath:/vault.jks
+#        trust-store-password: changeit
+      generic:
+        enabled: true
+        backend: secret
+        default-context: application
+        profile-separator: /
+      discovery:
+        enabled: true
+        service-id: central-vault
