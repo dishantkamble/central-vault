@@ -20,8 +20,8 @@ jobs:
       uses: paulhatch/semantic-version@v4.0.3
       with:
         tag_prefix: ""
-        major_pattern: /"feat"?/
-        minor_pattern: /"fix"?/
+        major_pattern: /feat?/
+        minor_pattern: /fix?/
         format: "${major}.${minor}.${patch}"
         bump_each_commit: false
     - name: Update version in pom.xml (Release only)
@@ -36,8 +36,8 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
     - name: Generate Release Notes
       uses: paolorevillosa/release-change-logs@master
-      with:
-        custom_tags: '{"fix(":"Bugfix","feat(": "Feature Added"}'
+#       with:
+#         custom_tags: '{"fix(":"Bugfix","feat(": "Feature Added"}'
     - name: Build with Maven
       run: mvn -B package --file pom.xml install -Dtoken=$GH_TOKEN
       env:
