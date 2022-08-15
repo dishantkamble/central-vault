@@ -45,7 +45,7 @@ jobs:
     - name: Generate Release Notes
       uses: paolorevillosa/release-change-logs@master
       with:
-        custom_tag: '{"fix(":"Bugfix","feat(": "Feature Added"}'
+        custom_tags: '{"fix(":"Bugfix","feat(": "Feature Added"}'
     - name: Create Release
       uses: Roang-zero1/github-create-release-action@v2
       with:
