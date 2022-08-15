@@ -80,6 +80,22 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    
+    <repositories>
+      <repository>
+        <id>github</id>
+        <name>central-java-dependency</name>
+        <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
+      </repository>
+    </repositories>
+    
+    <distributionManagement>
+      <repository>
+        <id>github</id>
+        <name>GitHub Dishant Apache Maven Packages</name>
+        <url>https://maven.pkg.github.com/dishantkamble/central-vault</url>
+      </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
