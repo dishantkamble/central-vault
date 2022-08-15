@@ -20,8 +20,8 @@ jobs:
       uses: paulhatch/semantic-version@v4.0.3
       with:
         tag_prefix: ""
-        major_pattern: /feat?/
-        minor_pattern: /fix?/
+        major_pattern: "/feat?/"
+        minor_pattern: "/fix?/"
         format: "${major}.${minor}.${patch}"
         bump_each_commit: false
     - name: Update version in pom.xml (Release only)
