@@ -7,13 +7,16 @@
     <parent>
         <groupId>com.dishant</groupId>
         <artifactId>central-java-dependency</artifactId>
-        <version>1.0.0.RELEASE</version>
+        <version>2.0.2</version>
     </parent>
 
     <groupId>com.dishant</groupId>
     <artifactId>central-vault</artifactId>
-    <name>central-vault</name>
-    <description>Central Vault Application</description>
+    <version>1.0.0</version>
+    
+    <properties>
+        <swagger.version>3.0.0</swagger.version>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -55,10 +58,12 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
+            <version>${swagger.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -81,6 +86,22 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    
+    <repositories>
+      <repository>
+        <id>github</id>
+        <name>central-java-dependency</name>
+        <url>https://maven.pkg.github.com/dishantkamble/central-java-dependency</url>
+      </repository>
+    </repositories>
+    
+    <distributionManagement>
+      <repository>
+        <id>github</id>
+        <name>GitHub Dishant Apache Maven Packages</name>
+        <url>https://maven.pkg.github.com/dishantkamble/central-vault</url>
+      </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
