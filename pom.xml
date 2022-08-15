@@ -7,13 +7,12 @@
     <parent>
         <groupId>com.dishant</groupId>
         <artifactId>central-java-dependency</artifactId>
-        <version>1.0.0.RELEASE</version>
+        <version>2.0.2</version>
     </parent>
 
     <groupId>com.dishant</groupId>
     <artifactId>central-vault</artifactId>
-    <name>central-vault</name>
-    <description>Central Vault Application</description>
+    <version>1.0.0</version>
 
     <dependencies>
         <dependency>
