@@ -3,12 +3,10 @@
   "extends": [
     "config:base"
   ],
-  {
-    "packageRules": [
-      {
-        "matchDatasources": ["github"],
-        "registryUrls": ["https://maven.pkg.github.com/dishantkamble/central-java-dependency"]
-      }
-    ]
-  }
+  "packageRules": [
+    {
+      "matchDatasources": ["github"],
+      "registryUrls": ["https://maven.pkg.github.com/dishantkamble/central-java-dependency"]
+    }
+  ]
 }
