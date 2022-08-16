@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
-  ]
+  ],
+  {
+    "packageRules": [
+      {
+        "matchDatasources": ["github"],
+        "registryUrls": ["https://maven.pkg.github.com/dishantkamble/central-java-dependency"]
+      }
+    ]
+  }
 }
