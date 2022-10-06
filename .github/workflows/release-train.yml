@@ -50,9 +50,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ github.token }}
     - name: Create Release
-      uses: Roang-zero1/github-create-release-action@v2
+      uses: ncipollo/release-action@v1.11.1
       with:
-        created_tag: ${{ steps.version.outputs.version }}
-        release_text: ${{ steps.changelog.outputs.change-logs}}
+        tag: ${{ steps.version.outputs.version }}
+        body: ${{ steps.changelog.outputs.changelog}}
+        generateReleaseNotes: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
