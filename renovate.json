@@ -5,14 +5,11 @@
   ],
   "packageRules": [
     {
-      "matchDatasources": ["github"],
-      "registryUrls": ["https://maven.pkg.github.com/dishantkamble/central-java-dependency"]
-    }
-  ],
-  "hostRules": [
-   {
-      "matchHost": "https://maven.pkg.github.com/dishantkamble/",
-      "token": "process.env.GITHUB_TOKEN"
+      "matchManagers": ["maven"],
+      "matchPackagePrefixes": ["com.dishant"],
+      "registryUrls": [
+        "https://maven.pkg.github.com/dishantkamble/central-java-dependency"
+      ],
     }
   ]
 }
