@@ -11,5 +11,12 @@
         "https://maven.pkg.github.com/dishantkamble/central-java-dependency"
       ],
     }
+  ],
+  "hostRules": [
+    {
+      "matchHost": "https://maven.pkg.github.com/dishantkamble/central-java-dependency/",
+      "token": "{secrets.GITHUB_TOKEN}",
+      "hostType": "github"
+    }
   ]
 }
