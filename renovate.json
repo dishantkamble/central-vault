@@ -10,7 +10,7 @@
       "matchPackagePrefixes": ["com.dishant"],
       "registryUrls": [
         "https://maven.pkg.github.com/dishantkamble/central-java-dependency"
-      ],
+      ]
     }
   ],
   "hostRules": [
